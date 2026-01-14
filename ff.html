@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Where in the world?</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+
+    .search {
+      flex: 1;
+      max-width: 400px;
+    }
+
+    .search input {
+      width: 100%;
+      padding: 10px 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .filter {
+      flex: 1;
+      max-width: 200px;
+    }
+
+    .filter select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .countries {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      width: 220px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .card img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .card h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="search">
+      <input type="text" placeholder="Search for a country..." />
+    </div>
+    <div class="filter">
+      <select>
+        <option>Filter by Region</option>
+        <option>Africa</option>
+        <option>Americas</option>
+        <option>Asia</option>
+        <option>Europe</option>
+        <option>Oceania</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="countries">
+    <div class="card">
+      <img src="germany.png" alt="Germany Flag" />
+      <h3>Germany</h3>
+      <p><strong>Population:</strong> 81,770,900</p>
+      <p><strong>Region:</strong> Europe</p>
+      <p><strong>Capital:</strong> Berlin</p>
+    </div>
+
+    <div class="card">
+      <img src="flag.png" alt="USA Flag" />
+      <h3>United States of America</h3>
+      <p><strong>Population:</strong> 323,947,000</p>
+      <p><strong>Region:</strong> Americas</p>
+      <p><strong>Capital:</strong> Washington, D.C.</p>
+    </div>
+
+    <div class="card">
+      <img src="flag (1).png" alt="Brazil Flag" />
+      <h3>Brazil</h3>
+      <p><strong>Population:</strong> 206,135,893</p>
+      <p><strong>Region:</strong> Americas</p>
+      <p><strong>Capital:</strong> Brasília</p>
+    </div>
+
+    <div class="card">
+      <img src="iceland.png" alt="Iceland Flag" />
+      <h3>Iceland</h3>
+      <p><strong>Population:</strong> 334,300</p>
+      <p><strong>Region:</strong> Europe</p>
+      <p><strong>Capital:</strong> Reykjavík</p>
+    </div>
+
+    <div class="card">
+      <img src="flag (2).png" alt="Afghanistan Flag" />
+      <h3>Afghanistan</h3>
+      <p><strong>Population:</strong> 27,657,145</p>
+      <p><strong>Region:</strong> Asia</p>
+      <p><strong>Capital:</strong> Kabul</p>
+    </div>
+
+    <div class="card">
+      <img src="aland-islands.png" alt="Åland Islands Flag" />
+      <h3>Åland Islands</h3>
+      <p><strong>Population:</strong> 28,875</p>
+      <p><strong>Region:</strong> Europe</p>
+      <p><strong>Capital:</strong> Mariehamn</p>
+    </div>
+
+    <div class="card">
+      <img src="flag (3).png" alt="Albania Flag" />
+      <h3>Albania</h3>
+      <p><strong>Population:</strong> 2,886,026</p>
+      <p><strong>Region:</strong> Europe</p>
+      <p><strong>Capital:</strong> Tirana</p>
+    </div>
+
+    <div class="card">
+      <img src="algeria.png" alt="Algeria Flag" />
+      <h3>Algeria</h3>
+      <p><strong>Population:</strong> 40,400,000</p>
+      <p><strong>Region:</strong> Africa</p>
+      <p><strong>Capital:</strong> Algiers</p>
+    </div>
+  </div>
+
+</body>
+</html>
